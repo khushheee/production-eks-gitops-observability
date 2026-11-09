@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Healing Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Self-Healing Infrastructure</h1>
+        <p class="subtitle">Application Monitoring Dashboard</p>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Application Status</h3>
+                <h2 id="status">Checking...</h2>
+            </div>
+
+            <div class="card">
+                <h3>Health Check</h3>
+                <h2 id="health">Checking...</h2>
+            </div>
+
+            <div class="card">
+                <h3>Application Uptime</h3>
+                <h2 id="uptime">0 seconds</h2>
+            </div>
+
+        </div>
+
+        <button onclick="checkStatus()">Refresh Status</button>
+
+        <p id="last-check"></p>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
